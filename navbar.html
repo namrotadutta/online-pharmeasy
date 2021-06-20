@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="navbar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Pharmeasy</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <img class="header_logo" src="netmeds.jpg" alt="logo" />
+      <div class="header_search">
+        <div class="icons">
+          <input
+            class="header_searchInput"
+            placeholder="Search for Medicines/ Healthcare Products"
+            type="text"
+          />
+        </div>
+
+        <div class="main_navigation">
+         
+              <a href="file:///C:/Users/Lenovo/Documents/online%20pharmeasy/medicine-order.html" style="text-decoration: none;">
+                <div class="nav_option">
+            <img class="medicine" src="medicine.jpg" alt="" />
+            <span class="nav_optionOne">
+              Medicine
+              <small>over 2500 Medicine</small>
+            </span>
+           
+          </div>
+          </a>
+          <a href="file:///C:/Users/Lenovo/Documents/online%20pharmeasy/wellness.html" style="text-decoration: none;">
+          <div class="nav_option">
+              
+            <img class="medicine" src="wellness.jpg" alt="" />
+            <span class="nav_optionOne">
+              Wellness
+              <small>Health Products</small>
+            </span>
+           
+          </div>
+        </a>
+        <a href="C:\Users\Lenovo\Documents\online pharmeasy\diagnostic.html" style="text-decoration: none;">
+          <div class="nav_option">
+             
+            <img class="medicine" src="diagnostic.png" alt="" />
+            <span class="nav_optionOne">
+              Diagnostic
+              <small>Book tests and checkups</small>
+            </span>
+          
+          </div>
+          </a>
+          <a href="C:\Users\Lenovo\Documents\online pharmeasy\health-corner.html" style="text-decoration: none;">
+          <div class="nav_option">
+            <img class="medicine" src="health.png" alt="" />
+            <span class="nav_optionOne">
+              Health Corner
+              <small>Trending tips from health experts</small>
+            </span>
+          </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="header_nav">
+        <div class="header_option">
+          <span class="header_optionOne">Offers</span>
+        </div>
+        <div class="header_option">
+          <span class="header_optionOne">User</span>
+        </div>
+        <div class="header_option">
+          <span class="header_optionOne">Cart</span>
+        </div>
+      </div>
+    </div>
+    <!-- carousel  -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="slide2.jpg"
+          style="width: 1505px; height: 300px; margin-top: 10px"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="slide1.jpg"
+          style="width: 1505px; height: 300px; margin-top: 10px"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="slide6.jpg"
+          style="width: 1505px; height: 300px; margin-top: 10px"
+        />
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="slide4.jpg"
+          style="width: 1505px; height: 300px; margin-top: 10px"
+        />
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="slide5.jpg"
+          style="width: 1505px; height: 300px; margin-top: 10px"
+        />
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="slide7.jpg"
+          style="width: 1505px; height: 300px; margin-top: 10px"
+        />
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!-- card product -->
+    <div class="card">
+      <a href="C:\Users\Lenovo\Documents\online pharmeasy\medicine-order.html" style="text-decoration: none;">
+        <img
+          src="order-medicine.png"
+          alt=""
+          style="width: 200px; height: 200px"
+        />
+        <p style="font-size: 20px;">Order Medicines</p>
+
+        <p><button>Order Now</button></p>
+      </a>
+     
+    </div>
+    <div class="card">
+      <a href="C:\Users\Lenovo\Documents\online pharmeasy\wellness.html" style="text-decoration: none;">
+        <img
+          src="healthcare.png"
+          alt=""
+          style="width: 200px; height: 200px"
+        />
+        <p style="font-size: 20px;"> Wellness Products  </p>
+
+        <p><button>Order Now</button></p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="file:///C:/Users/Lenovo/Documents/online%20pharmeasy/diagnostic.html" style="text-decoration: none;">
+        <img
+          src="doctor.png"
+          alt=""
+          style="width: 200px; height: 200px"
+        />
+       
+            <p style="font-size: 20px;">Diagnostic</p>
+        
+
+        <button>Book Now</button>
+      </a>
+    </div>
+    <div class="card">
+        <a href="C:\Users\Lenovo\Documents\online pharmeasy\health-corner.html" style="text-decoration: none;">
+          <img
+            src="doctor.png"
+            alt=""
+            style="width: 200px; height: 200px"
+          />
+         
+              <p style="font-size: 20px;">Health Corner</p>
+          
+  
+          <button>Book Now</button>
+        </a>
+      </div>
+  </body>
+</html>
